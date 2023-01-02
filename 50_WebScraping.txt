@@ -1,0 +1,40 @@
+Bueno en si el web scraping es para obtener datos de las paginas webse enfoca
+principalmente en html
+
+
+Se puede usar para un chingo de cosas pero la principal es obtener un dato actualizado de 
+cualquier chigadera que quiereas 
+por ejemplo
+el precio de algo en mercado libre 
+
+
+programas algo para quete avise cuando baje deprecio 
+
+
+en todo caso 
+se tiene que tener cuidado conlos datos extraidos 
+en el uso que se les de 
+extraerlos y tenerlos no causa pedos 
+
+
+algunas paginas bloquean el scraping y dan datos falsos 
+o tambien pueden bloquear tu IP 
+y valio verga 
+
+Alto cuidado.
+
+
+
+
+Sintaxis de web scrapping 
+
+
+"       soup.select('div')          | todos los elementos con la etiqueta 'div'
+
+#       soup.select('#estilo_4')    | elementos que contengan id = 'estilo_4'
+
+.       soup.select('.columna_der') | elementos que contengan class = 'columna_der'
+
+( )     soup.select('div span')     | cualquier elemento llado 'span' dentro de un elemento 'div'
+
+>       soup.select('div>span')     | cualquier elemento llamado 'span' directamente dentro de un elemento'div' sin nada en medio

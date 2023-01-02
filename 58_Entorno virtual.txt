@@ -1,0 +1,61 @@
+los entornos virtuales son areas de trabajo, en ellas se guardan las librerias o paquetes
+que se utilicen en algun proyecto 
+
+
+asi puedes trabajar con diferentes versiones de alguna libreria
+los guardas en diferentes carpetas y ya no hay pedo 
+ 
+
+se necesita instalar una libreria 
+virtualenv
+
+
+
+Para ver cuantas bibliotecas o modulos hay se puede usar este comando
+pip freeze
+
+y muestra las librerias instaladas con su version 
+
+
+En la carpeta Entorno se encuentran dos proyectos
+para crear el entorno virtual se necesita entrar a la carpeta del proyecto# y ejecutar el comando
+
+virtualenv #nombredecarpeta           <-- El que quieras 
+
+y se crear una carpeta con el entorno
+
+Pero ese entorno no esta activado, asi que para poder activarlo tenemos que ejecutar el comando
+
+.\nombredelentorno\Scripts\activate
+
+ejemplo practice
+
+E:\python\58_Entorno\proyecto1>.\p1\Scripts\activate
+
+y ahora la direccion sera esta
+(p1) E:\python\58_Entorno\proyecto1>
+
+al inicio aparecera el entorno en el que estamos 
+
+
+Volvemos a llamar a pip freeze para comprobar que modulos se encuentran instalados
+
+No aparecera nada porque el entorno no tiene nada 
+
+instalamos cualquier mamada 
+
+y aparecera cuando pongamos freezed
+
+en el entorno de proyecto2 ya que lo creamos y actimos instalamos una version anterior de pyjokes
+
+pip install "pyjokes ==0.4.0"
+-------- para una version en especifico se tiene que poner entre comillas -----------------
+
+y asi tenemos dos versiones diferentes de la misma libreria 
+en proyecto1 la version 0.6.0
+en proyecto2 la version 0.4.0
+
+
+para desactivar el entorno solo tenemos que ejecutar el comando
+
+deactivate
